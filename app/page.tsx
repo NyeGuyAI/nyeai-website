@@ -47,9 +47,10 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="NyeAI Logo"
-                width={120}
-                height={120}
-                className="rounded-2xl shadow-2xl shadow-purple-primary/30"
+                width={220}
+                height={220}
+                className="drop-shadow-[0_0_50px_rgba(168,85,247,0.8)] drop-shadow-[0_0_100px_rgba(217,70,239,0.6)]"
+                priority
               />
             </div>
 

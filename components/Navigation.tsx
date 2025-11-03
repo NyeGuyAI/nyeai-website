@@ -20,13 +20,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 group">
             <Image
               src="/logo.png"
               alt="NyeAI Logo"
               width={40}
               height={40}
-              className="rounded-md"
+              className="drop-shadow-[0_0_10px_rgba(168,85,247,0.5)] group-hover:drop-shadow-[0_0_15px_rgba(168,85,247,0.8)] transition-all"
             />
             <span className="text-xl font-bold text-foreground">NyeAI</span>
           </Link>
