@@ -44,14 +44,16 @@ export default function Home() {
           >
             {/* Logo */}
             <div className="flex justify-center mb-8">
-              <Image
-                src="/logo.png"
-                alt="NyeAI Logo"
-                width={220}
-                height={220}
-                className="drop-shadow-[0_0_50px_rgba(168,85,247,0.8)] drop-shadow-[0_0_100px_rgba(217,70,239,0.6)]"
-                priority
-              />
+              <div className="relative bg-background rounded-2xl overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="NyeAI Logo"
+                  width={220}
+                  height={220}
+                  className="drop-shadow-[0_0_50px_rgba(168,85,247,0.8)] drop-shadow-[0_0_100px_rgba(217,70,239,0.6)]"
+                  priority
+                />
+              </div>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{
