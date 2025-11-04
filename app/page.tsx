@@ -61,7 +61,7 @@ export default function Home() {
             }}>
               <span className="text-foreground">Transform Your Business</span>
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-primary to-purple-accent">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a8b2c0] via-metallic to-[#d0d8e0]">
                 with AI
               </span>
             </h1>
