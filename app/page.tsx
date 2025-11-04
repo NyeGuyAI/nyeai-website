@@ -44,20 +44,20 @@ export default function Home() {
           >
             {/* Logo */}
             <div className="flex justify-center mb-8">
-              <div className="relative bg-background/90 backdrop-blur-sm rounded-2xl p-4">
-                <Image
-                  src="/logo.png"
-                  alt="NyeAI Logo"
-                  width={220}
-                  height={220}
-                  className="drop-shadow-[0_0_50px_rgba(168,85,247,0.8)] drop-shadow-[0_0_100px_rgba(217,70,239,0.6)]"
-                  priority
-                />
-              </div>
+              <Image
+                src="/logo.png"
+                alt="NyeAI Logo"
+                width={220}
+                height={220}
+                className="drop-shadow-[0_0_50px_rgba(168,85,247,0.8)] drop-shadow-[0_0_100px_rgba(217,70,239,0.6)]"
+                priority
+              />
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{
-              textShadow: '0 0 40px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(168,85,247,0.5)'
+              WebkitTextStroke: '2px rgba(0,0,0,0.8)',
+              paintOrder: 'stroke fill',
+              textShadow: '0 0 40px rgba(0,0,0,0.9), 0 4px 20px rgba(0,0,0,1), 0 0 20px rgba(168,85,247,0.5)'
             }}>
               <span className="text-foreground">Transform Your Business</span>
               <br />
@@ -67,7 +67,9 @@ export default function Home() {
             </h1>
 
             <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-white" style={{
-              textShadow: '0 2px 20px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.7)'
+              WebkitTextStroke: '1px rgba(0,0,0,0.8)',
+              paintOrder: 'stroke fill',
+              textShadow: '0 2px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.9)'
             }}>
               Expert AI training, automation, and implementation services for small and local businesses.
               Practical solutions that save time and drive growth.
