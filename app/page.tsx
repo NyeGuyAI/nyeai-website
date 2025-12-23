@@ -13,19 +13,19 @@ export default function Home() {
       title: "AI Tool Training & Education",
       description:
         "Learn ChatGPT, Claude, Gemini, and industry-specific AI tools. Custom training for your team with ongoing support and best practices.",
-      icon: "/AutomationIcon_NyeAI.jpeg",
+      icon: "/AutomationIcon_NyeAI.webp",
     },
     {
       title: "Process Automation & Integration",
       description:
         "Identify automation opportunities, implement AI workflows, and connect your tools to streamline operations and save hours every week.",
-      icon: "/SecurityIcon_NyeAI.jpeg",
+      icon: "/SecurityIcon_NyeAI.webp",
     },
     {
       title: "Data Strategy & Business Intelligence",
       description:
         "Organize and centralize your data, gain AI-powered insights, and make data-driven decisions that grow your business.",
-      icon: "/BusinessGrowthIcon_NyeAI.jpeg",
+      icon: "/BusinessGrowthIcon_NyeAI.webp",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <div className="relative bg-background rounded-2xl overflow-hidden">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="NyeAI Logo"
                   width={220}
                   height={220}

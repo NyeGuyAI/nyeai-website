@@ -22,7 +22,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="NyeAI Logo"
               width={40}
               height={40}

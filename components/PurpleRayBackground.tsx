@@ -5,7 +5,7 @@ export default function PurpleRayBackground() {
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* Background image with purple neural network pattern */}
       <Image
-        src="/background.png"
+        src="/background.webp"
         alt=""
         fill
         className="object-cover opacity-80"

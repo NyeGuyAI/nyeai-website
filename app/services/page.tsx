@@ -12,19 +12,19 @@ export default function ServicesPage() {
       title: "AI Tool Training & Education",
       description:
         "Learn ChatGPT, Claude, Gemini, Midjourney, and industry-specific AI tools. Custom training sessions for your team with ongoing support, best practices, and practical use cases tailored to your business needs.",
-      icon: "/AutomationIcon_NyeAI.jpeg",
+      icon: "/AutomationIcon_NyeAI.webp",
     },
     {
       title: "Process Automation & Integration",
       description:
         "Identify automation opportunities across your workflows, implement AI-powered processes, and connect your existing tools to streamline operations. Save 10-30 hours per week on repetitive tasks.",
-      icon: "/SecurityIcon_NyeAI.jpeg",
+      icon: "/SecurityIcon_NyeAI.webp",
     },
     {
       title: "Data Strategy & Business Intelligence",
       description:
         "Organize and centralize your business data, implement AI-powered analytics and reporting, and make data-driven decisions that accelerate growth and improve efficiency.",
-      icon: "/BusinessGrowthIcon_NyeAI.jpeg",
+      icon: "/BusinessGrowthIcon_NyeAI.webp",
     },
   ];
 

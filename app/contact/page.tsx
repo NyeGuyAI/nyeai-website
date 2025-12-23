@@ -21,12 +21,29 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("sending");
 
-    // TODO: Implement actual form submission (email API, etc.)
-    // For now, just simulate a successful submission
-    setTimeout(() => {
-      setStatus("sent");
-      setFormData({ name: "", email: "", company: "", service: "", message: "" });
-    }, 1500);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("sent");
+        setFormData({ name: "", email: "", company: "", service: "", message: "" });
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 5000);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
