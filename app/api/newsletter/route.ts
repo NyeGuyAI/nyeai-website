@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: "NyeAI Newsletter <onboarding@resend.dev>",
       to: contactEmail,
-      subject: "New Newsletter Signup!",
+      subject: "📧 New Subscriber | NyeAI Newsletter",
       html: `
         <!DOCTYPE html>
         <html>

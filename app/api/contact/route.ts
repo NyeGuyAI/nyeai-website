@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
       from: "NyeAI Contact Form <onboarding@resend.dev>", // Will need to update with verified domain
       to: contactEmail,
       replyTo: email,
-      subject: `New Contact Form Submission from ${name}`,
+      subject: `🔔 New Lead: ${name}${service ? ` - ${service}` : ''} | NyeAI`,
       html: `
         <!DOCTYPE html>
         <html>
